@@ -35,7 +35,13 @@ namespace WindowsFormsApp1
 
         private void jMetroTextBoxEmail_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void jThinButtonPrijaviMe_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
         }
     }
 }

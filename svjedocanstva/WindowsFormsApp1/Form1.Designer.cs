@@ -113,6 +113,7 @@
             this.jThinButtonPrijaviMe.Name = "jThinButtonPrijaviMe";
             this.jThinButtonPrijaviMe.Size = new System.Drawing.Size(168, 63);
             this.jThinButtonPrijaviMe.TabIndex = 3;
+            this.jThinButtonPrijaviMe.Click += new System.EventHandler(this.jThinButtonPrijaviMe_Click);
             // 
             // PictureBoxLogo
             // 
