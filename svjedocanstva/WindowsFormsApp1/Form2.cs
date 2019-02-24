@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
+        int sakriveno = 1;
         public Form2()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void buttonX_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void pictureBoxUser_Click(object sender, EventArgs e)
@@ -36,19 +37,32 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if(labelMenu.Text == "NAZAD")
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            if (sakriveno == 1)
             {
-                panelMenu.Width = 220;
-               
-                labelMenu.Text = "MENU";
-                panel1.Enabled = false;
-            }
-            else if(labelMenu.Text == "MENU")
-            {
-                panelMenu.Width = 50;
+                panelMenu.Width = panelMenu.Width + 10;
+                if(panelMenu.Width >= 220)
+                {
+                    timer1.Stop();
+                    sakriveno = 0;
+                    panel1.Enabled = false;
+                }
                 
-                labelMenu.Text = "NAZAD";
-                panel1.Enabled = true;
+            }
+            else if(sakriveno == 0)
+            {
+                panelMenu.Width = panelMenu.Width - 10;
+                if (panelMenu.Width <= 50)
+                {
+                    timer1.Stop();
+                    sakriveno = 1;
+                    panel1.Enabled = true;
+                }   
             }
         }
 
@@ -56,5 +70,7 @@ namespace WindowsFormsApp1
         {
             labelDodajUcenika.BackColor = Color.SkyBlue;
         }
+
+        
     }
 }

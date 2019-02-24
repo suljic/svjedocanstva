@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
              
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void jMetroTextBoxEmail_Load(object sender, EventArgs e)

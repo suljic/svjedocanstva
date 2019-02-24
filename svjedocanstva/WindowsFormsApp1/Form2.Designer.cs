@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.labelDodajUcenika = new System.Windows.Forms.Label();
             this.labelMenu = new System.Windows.Forms.Label();
             this.buttonX = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +76,7 @@
             this.labelMenu.Name = "labelMenu";
             this.labelMenu.Size = new System.Drawing.Size(200, 23);
             this.labelMenu.TabIndex = 11;
-            this.labelMenu.Text = "NAZAD";
+            this.labelMenu.Text = "MENU";
             this.labelMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelMenu.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -103,6 +105,11 @@
             this.panel1.Size = new System.Drawing.Size(750, 600);
             this.panel1.TabIndex = 10;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 30;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,5 +136,6 @@
         private System.Windows.Forms.Label labelMenu;
         private System.Windows.Forms.Label labelDodajUcenika;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
