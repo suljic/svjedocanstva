@@ -21,11 +21,40 @@ namespace WindowsFormsApp1
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.Bounds = Screen.PrimaryScreen.Bounds;
+            panelMenu.Width = 50;
         }
 
         private void buttonX_Click(object sender, EventArgs e)
         {
-            A
+            Close();
+        }
+
+        private void pictureBoxUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if(labelMenu.Text == "NAZAD")
+            {
+                panelMenu.Width = 220;
+               
+                labelMenu.Text = "MENU";
+                panel1.Enabled = false;
+            }
+            else if(labelMenu.Text == "MENU")
+            {
+                panelMenu.Width = 50;
+                
+                labelMenu.Text = "NAZAD";
+                panel1.Enabled = true;
+            }
+        }
+
+        private void labelDodajUcenika_Click(object sender, EventArgs e)
+        {
+            labelDodajUcenika.BackColor = Color.SkyBlue;
         }
     }
 }

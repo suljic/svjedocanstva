@@ -101,6 +101,7 @@
             this.jThinButtonPrijaviMe.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
             this.jThinButtonPrijaviMe.BorderRadius = 20;
             this.jThinButtonPrijaviMe.ButtonText = "PRIJAVI SE";
+            this.jThinButtonPrijaviMe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.jThinButtonPrijaviMe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jThinButtonPrijaviMe.Font_Size = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jThinButtonPrijaviMe.ForeColors = System.Drawing.Color.White;
@@ -155,6 +156,7 @@
             // buttonX
             // 
             this.buttonX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonX.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonX.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
             this.buttonX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
             this.buttonX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;

@@ -30,46 +30,53 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.pictureBoxUser = new System.Windows.Forms.PictureBox();
-            this.buttonDodaj = new System.Windows.Forms.Button();
+            this.labelDodajUcenika = new System.Windows.Forms.Label();
+            this.labelMenu = new System.Windows.Forms.Label();
             this.buttonX = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
-            this.panelMenu.Controls.Add(this.buttonDodaj);
-            this.panelMenu.Controls.Add(this.pictureBoxUser);
+            this.panelMenu.Controls.Add(this.labelDodajUcenika);
+            this.panelMenu.Controls.Add(this.labelMenu);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(274, 600);
+            this.panelMenu.Size = new System.Drawing.Size(222, 600);
             this.panelMenu.TabIndex = 0;
             // 
-            // pictureBoxUser
+            // labelDodajUcenika
             // 
-            this.pictureBoxUser.BackColor = System.Drawing.Color.White;
-            this.pictureBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUser.Image")));
-            this.pictureBoxUser.Location = new System.Drawing.Point(12, 56);
-            this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(66, 66);
-            this.pictureBoxUser.TabIndex = 0;
-            this.pictureBoxUser.TabStop = false;
+            this.labelDodajUcenika.AutoSize = true;
+            this.labelDodajUcenika.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDodajUcenika.ForeColor = System.Drawing.Color.White;
+            this.labelDodajUcenika.Location = new System.Drawing.Point(50, 62);
+            this.labelDodajUcenika.Name = "labelDodajUcenika";
+            this.labelDodajUcenika.Size = new System.Drawing.Size(138, 23);
+            this.labelDodajUcenika.TabIndex = 12;
+            this.labelDodajUcenika.Text = "DODAJ UCENIKA";
+            this.labelDodajUcenika.Click += new System.EventHandler(this.labelDodajUcenika_Click);
             // 
-            // buttonDodaj
+            // labelMenu
             // 
-            this.buttonDodaj.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
-            this.buttonDodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDodaj.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDodaj.ForeColor = System.Drawing.Color.White;
-            this.buttonDodaj.Location = new System.Drawing.Point(81, 50);
-            this.buttonDodaj.Name = "buttonDodaj";
-            this.buttonDodaj.Size = new System.Drawing.Size(190, 72);
-            this.buttonDodaj.TabIndex = 1;
-            this.buttonDodaj.Text = "DODAJ UCENIKA";
-            this.buttonDodaj.UseVisualStyleBackColor = true;
+            this.labelMenu.AutoSize = true;
+            this.labelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
+            this.labelMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelMenu.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenu.ForeColor = System.Drawing.Color.White;
+            this.labelMenu.Image = ((System.Drawing.Image)(resources.GetObject("labelMenu.Image")));
+            this.labelMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelMenu.Location = new System.Drawing.Point(3, 9);
+            this.labelMenu.MinimumSize = new System.Drawing.Size(200, 20);
+            this.labelMenu.Name = "labelMenu";
+            this.labelMenu.Size = new System.Drawing.Size(200, 23);
+            this.labelMenu.TabIndex = 11;
+            this.labelMenu.Text = "NAZAD";
+            this.labelMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelMenu.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonX
             // 
@@ -88,6 +95,14 @@
             this.buttonX.UseVisualStyleBackColor = true;
             this.buttonX.Click += new System.EventHandler(this.buttonX_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(50, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(750, 600);
+            this.panel1.TabIndex = 10;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,12 +111,13 @@
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.buttonX);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
+            this.panelMenu.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -109,8 +125,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button buttonDodaj;
-        private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.Button buttonX;
+        private System.Windows.Forms.Label labelMenu;
+        private System.Windows.Forms.Label labelDodajUcenika;
+        private System.Windows.Forms.Panel panel1;
     }
 }
