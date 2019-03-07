@@ -23,6 +23,8 @@ namespace WindowsFormsApp1
             this.FormBorderStyle = FormBorderStyle.None;
             this.Bounds = Screen.PrimaryScreen.Bounds;
             panelMenu.Width = 50;
+            labelDodajUcenika.BackColor = Color.SkyBlue;
+
         }
 
         private void buttonX_Click(object sender, EventArgs e)
@@ -42,35 +44,65 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+
             if (sakriveno == 1)
             {
                 panelMenu.Width = panelMenu.Width + 10;
-                if(panelMenu.Width >= 220)
+                panel1.Left = panel1.Left + 10;
+                if (panelMenu.Width >= 220)
                 {
                     timer1.Stop();
                     sakriveno = 0;
-                    panel1.Enabled = false;
+                    this.Refresh();
                 }
-                
+
             }
-            else if(sakriveno == 0)
+            else if (sakriveno == 0)
             {
                 panelMenu.Width = panelMenu.Width - 10;
+                panel1.Left = panel1.Left - 10;
                 if (panelMenu.Width <= 50)
                 {
                     timer1.Stop();
                     sakriveno = 1;
-                    panel1.Enabled = true;
-                }   
+                    this.Refresh();
+                }
             }
         }
 
         private void labelDodajUcenika_Click(object sender, EventArgs e)
         {
             labelDodajUcenika.BackColor = Color.SkyBlue;
+            labelRangLista.BackColor = Color.Transparent;
+            panel1.Visible = true;
         }
 
-        
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            labelDodajUcenika.BackColor = Color.Transparent;
+            labelRangLista.BackColor = Color.SkyBlue;
+            panel1.Visible = false;
+
+        }
     }
 }
