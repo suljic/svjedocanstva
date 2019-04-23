@@ -31,8 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.labelUpisaniUcenici = new System.Windows.Forms.Label();
-            this.labelUpisiOcjene = new System.Windows.Forms.Label();
+            this.labelRangLista = new System.Windows.Forms.Label();
             this.labelDodajUcenika = new System.Windows.Forms.Label();
             this.labelMenu = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -63,47 +62,49 @@
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.panelUpisaniUcenici = new System.Windows.Forms.Panel();
-            this.panelUcenik = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.labelPrikaziVise = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panelPodatci = new System.Windows.Forms.Panel();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.panelOcjene = new System.Windows.Forms.Panel();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.labelRangLista = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.buttonNazad = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelUspjeh = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelDodajUcenika.SuspendLayout();
-            this.panelUpisaniUcenici.SuspendLayout();
-            this.panelUcenik.SuspendLayout();
-            this.panelPodatci.SuspendLayout();
+            this.panelOcjene.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
             this.panelMenu.Controls.Add(this.labelRangLista);
-            this.panelMenu.Controls.Add(this.labelUpisaniUcenici);
-            this.panelMenu.Controls.Add(this.labelUpisiOcjene);
             this.panelMenu.Controls.Add(this.labelDodajUcenika);
             this.panelMenu.Controls.Add(this.labelMenu);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -112,29 +113,17 @@
             this.panelMenu.Size = new System.Drawing.Size(50, 920);
             this.panelMenu.TabIndex = 0;
             // 
-            // labelUpisaniUcenici
+            // labelRangLista
             // 
-            this.labelUpisaniUcenici.AutoSize = true;
-            this.labelUpisaniUcenici.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpisaniUcenici.ForeColor = System.Drawing.Color.White;
-            this.labelUpisaniUcenici.Location = new System.Drawing.Point(50, 112);
-            this.labelUpisaniUcenici.Name = "labelUpisaniUcenici";
-            this.labelUpisaniUcenici.Size = new System.Drawing.Size(145, 23);
-            this.labelUpisaniUcenici.TabIndex = 14;
-            this.labelUpisaniUcenici.Text = "UPISANI UČENICI";
-            this.labelUpisaniUcenici.Click += new System.EventHandler(this.label7_Click_1);
-            // 
-            // labelUpisiOcjene
-            // 
-            this.labelUpisiOcjene.AutoSize = true;
-            this.labelUpisiOcjene.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpisiOcjene.ForeColor = System.Drawing.Color.White;
-            this.labelUpisiOcjene.Location = new System.Drawing.Point(50, 158);
-            this.labelUpisiOcjene.Name = "labelUpisiOcjene";
-            this.labelUpisiOcjene.Size = new System.Drawing.Size(116, 23);
-            this.labelUpisiOcjene.TabIndex = 13;
-            this.labelUpisiOcjene.Text = "UPIŠI OCJENE";
-            this.labelUpisiOcjene.Click += new System.EventHandler(this.label7_Click);
+            this.labelRangLista.AutoSize = true;
+            this.labelRangLista.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRangLista.ForeColor = System.Drawing.Color.White;
+            this.labelRangLista.Location = new System.Drawing.Point(50, 99);
+            this.labelRangLista.Name = "labelRangLista";
+            this.labelRangLista.Size = new System.Drawing.Size(101, 23);
+            this.labelRangLista.TabIndex = 15;
+            this.labelRangLista.Text = "RANG LISTA";
+            this.labelRangLista.Click += new System.EventHandler(this.labelRangLista_Click);
             // 
             // labelDodajUcenika
             // 
@@ -315,8 +304,7 @@
             // 
             this.panelDodajUcenika.AutoScroll = true;
             this.panelDodajUcenika.BackColor = System.Drawing.Color.White;
-            this.panelDodajUcenika.Controls.Add(this.labelWarning);
-            this.panelDodajUcenika.Controls.Add(this.button1);
+            this.panelDodajUcenika.Controls.Add(this.buttonNext);
             this.panelDodajUcenika.Controls.Add(this.checkBoxNjemacki);
             this.panelDodajUcenika.Controls.Add(this.checkBoxEngleski);
             this.panelDodajUcenika.Controls.Add(this.dateTimePicker1);
@@ -340,18 +328,19 @@
             this.panelDodajUcenika.Controls.Add(this.label2);
             this.panelDodajUcenika.Controls.Add(this.textBox1);
             this.panelDodajUcenika.Controls.Add(this.label1);
-            this.panelDodajUcenika.Location = new System.Drawing.Point(79, 38);
+            this.panelDodajUcenika.Location = new System.Drawing.Point(70, 38);
             this.panelDodajUcenika.Name = "panelDodajUcenika";
-            this.panelDodajUcenika.Size = new System.Drawing.Size(1021, 882);
+            this.panelDodajUcenika.Size = new System.Drawing.Size(825, 882);
             this.panelDodajUcenika.TabIndex = 10;
             this.panelDodajUcenika.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // labelWarning
             // 
+            this.labelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWarning.AutoSize = true;
             this.labelWarning.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(835, 50);
+            this.labelWarning.Location = new System.Drawing.Point(899, 88);
             this.labelWarning.Name = "labelWarning";
             this.labelWarning.Size = new System.Drawing.Size(191, 15);
             this.labelWarning.TabIndex = 29;
@@ -360,11 +349,12 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(835, 8);
+            this.button1.Location = new System.Drawing.Point(901, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 35);
             this.button1.TabIndex = 28;
@@ -381,6 +371,7 @@
             this.checkBoxNjemacki.TabIndex = 27;
             this.checkBoxNjemacki.Text = "Njemacki Jezik";
             this.checkBoxNjemacki.UseVisualStyleBackColor = true;
+            this.checkBoxNjemacki.CheckedChanged += new System.EventHandler(this.checkBoxNjemacki_CheckedChanged);
             // 
             // checkBoxEngleski
             // 
@@ -486,271 +477,339 @@
             this.checkedListBox1.Size = new System.Drawing.Size(146, 64);
             this.checkedListBox1.TabIndex = 19;
             // 
-            // panelUpisaniUcenici
+            // buttonNext
             // 
-            this.panelUpisaniUcenici.Controls.Add(this.panelUcenik);
-            this.panelUpisaniUcenici.Location = new System.Drawing.Point(82, 35);
-            this.panelUpisaniUcenici.Name = "panelUpisaniUcenici";
-            this.panelUpisaniUcenici.Size = new System.Drawing.Size(1015, 885);
-            this.panelUpisaniUcenici.TabIndex = 11;
+            this.buttonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
+            this.buttonNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNext.BackgroundImage")));
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.White;
+            this.buttonNext.Location = new System.Drawing.Point(715, 818);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(34, 23);
+            this.buttonNext.TabIndex = 30;
+            this.buttonNext.UseVisualStyleBackColor = false;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
-            // panelUcenik
+            // panelOcjene
             // 
-            this.panelUcenik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelUcenik.Controls.Add(this.panelPodatci);
-            this.panelUcenik.Controls.Add(this.labelPrikaziVise);
-            this.panelUcenik.Controls.Add(this.label23);
-            this.panelUcenik.Controls.Add(this.textBox12);
-            this.panelUcenik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUcenik.Location = new System.Drawing.Point(0, 0);
-            this.panelUcenik.Name = "panelUcenik";
-            this.panelUcenik.Size = new System.Drawing.Size(1015, 74);
-            this.panelUcenik.TabIndex = 0;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(460, 16);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(267, 20);
-            this.textBox12.TabIndex = 1;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(31, 16);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(269, 23);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Prezime (očevo ime) i ime učenika";
-            // 
-            // labelPrikaziVise
-            // 
-            this.labelPrikaziVise.AutoSize = true;
-            this.labelPrikaziVise.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrikaziVise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
-            this.labelPrikaziVise.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelPrikaziVise.Location = new System.Drawing.Point(877, 16);
-            this.labelPrikaziVise.Name = "labelPrikaziVise";
-            this.labelPrikaziVise.Size = new System.Drawing.Size(77, 18);
-            this.labelPrikaziVise.TabIndex = 30;
-            this.labelPrikaziVise.Text = "Prikaži više";
-            this.labelPrikaziVise.Click += new System.EventHandler(this.labelPrikaziVise_Click);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 10;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // panelPodatci
-            // 
-            this.panelPodatci.Controls.Add(this.textBox17);
-            this.panelPodatci.Controls.Add(this.textBox18);
-            this.panelPodatci.Controls.Add(this.textBox19);
-            this.panelPodatci.Controls.Add(this.textBox20);
-            this.panelPodatci.Controls.Add(this.dateTimePicker3);
-            this.panelPodatci.Controls.Add(this.label24);
-            this.panelPodatci.Controls.Add(this.label25);
-            this.panelPodatci.Controls.Add(this.textBox21);
-            this.panelPodatci.Controls.Add(this.label26);
-            this.panelPodatci.Controls.Add(this.textBox22);
-            this.panelPodatci.Controls.Add(this.label27);
-            this.panelPodatci.Controls.Add(this.textBox23);
-            this.panelPodatci.Controls.Add(this.label28);
-            this.panelPodatci.Controls.Add(this.textBox24);
-            this.panelPodatci.Controls.Add(this.label29);
-            this.panelPodatci.Controls.Add(this.textBox25);
-            this.panelPodatci.Controls.Add(this.label30);
-            this.panelPodatci.Controls.Add(this.label31);
-            this.panelPodatci.Controls.Add(this.label32);
-            this.panelPodatci.Controls.Add(this.label33);
-            this.panelPodatci.Location = new System.Drawing.Point(21, 46);
-            this.panelPodatci.Name = "panelPodatci";
-            this.panelPodatci.Size = new System.Drawing.Size(879, 10);
-            this.panelPodatci.TabIndex = 31;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(438, 364);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(267, 20);
-            this.textBox17.TabIndex = 51;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(438, 325);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(267, 20);
-            this.textBox18.TabIndex = 50;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(438, 288);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(267, 20);
-            this.textBox19.TabIndex = 49;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(438, 208);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(267, 20);
-            this.textBox20.TabIndex = 48;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Checked = false;
-            this.dateTimePicker3.Location = new System.Drawing.Point(438, 8);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(267, 20);
-            this.dateTimePicker3.TabIndex = 47;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(8, 8);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(126, 23);
-            this.label24.TabIndex = 32;
-            this.label24.Text = "Datum rođenja";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(8, 53);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(261, 23);
-            this.label25.TabIndex = 46;
-            this.label25.Text = "Mjesto rođenja,općina,republika";
+            this.panelOcjene.Controls.Add(this.textBox21);
+            this.panelOcjene.Controls.Add(this.label26);
+            this.panelOcjene.Controls.Add(this.textBox20);
+            this.panelOcjene.Controls.Add(this.label25);
+            this.panelOcjene.Controls.Add(this.textBox19);
+            this.panelOcjene.Controls.Add(this.label24);
+            this.panelOcjene.Controls.Add(this.textBox18);
+            this.panelOcjene.Controls.Add(this.label23);
+            this.panelOcjene.Controls.Add(this.textBox17);
+            this.panelOcjene.Controls.Add(this.label22);
+            this.panelOcjene.Controls.Add(this.buttonNazad);
+            this.panelOcjene.Controls.Add(this.textBox14);
+            this.panelOcjene.Controls.Add(this.textBox15);
+            this.panelOcjene.Controls.Add(this.textBox16);
+            this.panelOcjene.Controls.Add(this.label21);
+            this.panelOcjene.Controls.Add(this.textBox11);
+            this.panelOcjene.Controls.Add(this.label16);
+            this.panelOcjene.Controls.Add(this.textBox12);
+            this.panelOcjene.Controls.Add(this.textBox13);
+            this.panelOcjene.Controls.Add(this.label17);
+            this.panelOcjene.Controls.Add(this.label18);
+            this.panelOcjene.Controls.Add(this.label19);
+            this.panelOcjene.Controls.Add(this.label20);
+            this.panelOcjene.Controls.Add(this.textBox10);
+            this.panelOcjene.Controls.Add(this.label15);
+            this.panelOcjene.Controls.Add(this.textBox9);
+            this.panelOcjene.Controls.Add(this.textBox8);
+            this.panelOcjene.Controls.Add(this.textBox7);
+            this.panelOcjene.Controls.Add(this.label14);
+            this.panelOcjene.Controls.Add(this.label9);
+            this.panelOcjene.Controls.Add(this.label7);
+            this.panelOcjene.Controls.Add(this.labelUspjeh);
+            this.panelOcjene.Location = new System.Drawing.Point(70, 38);
+            this.panelOcjene.Name = "panelOcjene";
+            this.panelOcjene.Size = new System.Drawing.Size(814, 888);
+            this.panelOcjene.TabIndex = 33;
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(438, 245);
+            this.textBox21.Location = new System.Drawing.Point(341, 358);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(267, 20);
-            this.textBox21.TabIndex = 41;
+            this.textBox21.Size = new System.Drawing.Size(100, 20);
+            this.textBox21.TabIndex = 43;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(8, 360);
+            this.label26.Location = new System.Drawing.Point(15, 354);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 23);
-            this.label26.TabIndex = 45;
-            this.label26.Text = "Želja 2";
+            this.label26.Size = new System.Drawing.Size(137, 23);
+            this.label26.TabIndex = 42;
+            this.label26.Text = "Eksterna matura";
             // 
-            // textBox22
+            // textBox20
             // 
-            this.textBox22.Location = new System.Drawing.Point(438, 170);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(267, 20);
-            this.textBox22.TabIndex = 39;
+            this.textBox20.Location = new System.Drawing.Point(341, 319);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(100, 20);
+            this.textBox20.TabIndex = 41;
             // 
-            // label27
+            // label25
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(9, 89);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(289, 23);
-            this.label27.TabIndex = 34;
-            this.label27.Text = "Prezime i ime oca i majke, zanimanje";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(15, 315);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(145, 23);
+            this.label25.TabIndex = 40;
+            this.label25.Text = "Učenik generacije";
             // 
-            // textBox23
+            // textBox19
             // 
-            this.textBox23.Location = new System.Drawing.Point(438, 125);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(267, 20);
-            this.textBox23.TabIndex = 37;
+            this.textBox19.Location = new System.Drawing.Point(341, 278);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 20);
+            this.textBox19.TabIndex = 39;
             // 
-            // label28
+            // label24
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(9, 125);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(97, 23);
-            this.label28.TabIndex = 36;
-            this.label28.Text = "Državljanin\r\n";
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(15, 274);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(247, 23);
+            this.label24.TabIndex = 38;
+            this.label24.Text = "Osvojeni bodovi na takmičenju";
             // 
-            // textBox24
+            // textBox18
             // 
-            this.textBox24.Location = new System.Drawing.Point(438, 89);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(267, 20);
-            this.textBox24.TabIndex = 35;
+            this.textBox18.Location = new System.Drawing.Point(341, 233);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 20);
+            this.textBox18.TabIndex = 37;
             // 
-            // label29
+            // label23
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(9, 325);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 23);
-            this.label29.TabIndex = 44;
-            this.label29.Text = "Želja 1";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(15, 229);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(142, 23);
+            this.label23.TabIndex = 36;
+            this.label23.Text = "Posebne diplome";
             // 
-            // textBox25
+            // textBox17
             // 
-            this.textBox25.Location = new System.Drawing.Point(438, 54);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(267, 20);
-            this.textBox25.TabIndex = 33;
+            this.textBox17.Location = new System.Drawing.Point(341, 193);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 20);
+            this.textBox17.TabIndex = 35;
             // 
-            // label30
+            // label22
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(8, 166);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(360, 23);
-            this.label30.TabIndex = 38;
-            this.label30.Text = "Adresa stanovanja, ulica, broj, mjesto, općina\r\n";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(15, 184);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(247, 23);
+            this.label22.TabIndex = 34;
+            this.label22.Text = "Osvojeni bodovi na takmičenju";
             // 
-            // label31
+            // buttonNazad
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(9, 208);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(109, 23);
-            this.label31.TabIndex = 40;
-            this.label31.Text = "Broj telefona";
+            this.buttonNazad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonNazad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
+            this.buttonNazad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNazad.BackgroundImage")));
+            this.buttonNazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNazad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNazad.ForeColor = System.Drawing.Color.White;
+            this.buttonNazad.Location = new System.Drawing.Point(659, 827);
+            this.buttonNazad.Name = "buttonNazad";
+            this.buttonNazad.Size = new System.Drawing.Size(41, 23);
+            this.buttonNazad.TabIndex = 33;
+            this.buttonNazad.UseVisualStyleBackColor = false;
+            this.buttonNazad.Click += new System.EventHandler(this.buttonNazad_Click);
             // 
-            // label32
+            // textBox14
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(8, 288);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(168, 23);
-            this.label32.TabIndex = 43;
-            this.label32.Text = "Fakultativna nastava";
+            this.textBox14.Location = new System.Drawing.Point(695, 152);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.TabIndex = 21;
             // 
-            // label33
+            // textBox15
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(8, 245);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(394, 23);
-            this.label33.TabIndex = 42;
-            this.label33.Text = "Prvi strani jezik koji je učenik učio u osnovnoj školi";
+            this.textBox15.Location = new System.Drawing.Point(577, 152);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.TabIndex = 20;
             // 
-            // labelRangLista
+            // textBox16
             // 
-            this.labelRangLista.AutoSize = true;
-            this.labelRangLista.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRangLista.ForeColor = System.Drawing.Color.White;
-            this.labelRangLista.Location = new System.Drawing.Point(50, 203);
-            this.labelRangLista.Name = "labelRangLista";
-            this.labelRangLista.Size = new System.Drawing.Size(101, 23);
-            this.labelRangLista.TabIndex = 15;
-            this.labelRangLista.Text = "RANG LISTA";
-            this.labelRangLista.Click += new System.EventHandler(this.labelRangLista_Click);
+            this.textBox16.Location = new System.Drawing.Point(459, 152);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.TabIndex = 19;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(340, 148);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(26, 23);
+            this.label21.TabIndex = 18;
+            this.label21.Text = "IX";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(695, 114);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.TabIndex = 17;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(695, 87);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(102, 23);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Informatika";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(577, 114);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.TabIndex = 15;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(459, 114);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.TabIndex = 14;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(340, 110);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 23);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "VIII";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(459, 88);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 23);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "Matematika";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(602, 87);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 23);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Fizika";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(15, 88);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(311, 23);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Uspjeh iz predmeta značajnih za struku";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(695, 61);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 8;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(730, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(26, 23);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "IX";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(577, 61);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 6;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(459, 61);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 5;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(341, 61);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(379, 35);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(27, 23);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "VI";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(492, 35);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 23);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "VII";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(609, 34);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 23);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "VIII";
+            // 
+            // labelUspjeh
+            // 
+            this.labelUspjeh.AutoSize = true;
+            this.labelUspjeh.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUspjeh.Location = new System.Drawing.Point(15, 47);
+            this.labelUspjeh.Name = "labelUspjeh";
+            this.labelUspjeh.Size = new System.Drawing.Size(170, 23);
+            this.labelUspjeh.TabIndex = 0;
+            this.labelUspjeh.Text = "Uspjeh po razredima";
             // 
             // Form2
             // 
@@ -758,9 +817,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1096, 920);
+            this.Controls.Add(this.panelOcjene);
+            this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonX);
-            this.Controls.Add(this.panelUpisaniUcenici);
             this.Controls.Add(this.panelDodajUcenika);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -770,12 +831,10 @@
             this.panelMenu.PerformLayout();
             this.panelDodajUcenika.ResumeLayout(false);
             this.panelDodajUcenika.PerformLayout();
-            this.panelUpisaniUcenici.ResumeLayout(false);
-            this.panelUcenik.ResumeLayout(false);
-            this.panelUcenik.PerformLayout();
-            this.panelPodatci.ResumeLayout(false);
-            this.panelPodatci.PerformLayout();
+            this.panelOcjene.ResumeLayout(false);
+            this.panelOcjene.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -810,37 +869,42 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox checkBoxEngleski;
         private System.Windows.Forms.CheckBox checkBoxNjemacki;
-        private System.Windows.Forms.Label labelUpisiOcjene;
-        private System.Windows.Forms.Label labelUpisaniUcenici;
-        private System.Windows.Forms.Panel panelUpisaniUcenici;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelWarning;
-        private System.Windows.Forms.Panel panelUcenik;
-        private System.Windows.Forms.Label labelPrikaziVise;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Panel panelPodatci;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label labelRangLista;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Panel panelOcjene;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label labelRangLista;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button buttonNazad;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelUspjeh;
     }
 }

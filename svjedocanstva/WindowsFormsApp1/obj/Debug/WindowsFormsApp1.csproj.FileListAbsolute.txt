@@ -31,3 +31,4 @@ C:\Users\ENVY\Desktop\projects\svjedocanstva\svjedocanstva\WindowsFormsApp1\bin\
 C:\Users\ENVY\Desktop\projects\svjedocanstva\svjedocanstva\WindowsFormsApp1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\ENVY\Desktop\projects\svjedocanstva\svjedocanstva\WindowsFormsApp1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\ENVY\Desktop\projects\svjedocanstva\svjedocanstva\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\ENVY\Desktop\projects\svjedocanstva\svjedocanstva\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources

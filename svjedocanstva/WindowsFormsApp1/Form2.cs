@@ -24,11 +24,9 @@ namespace WindowsFormsApp1
             this.FormBorderStyle = FormBorderStyle.None;
             this.Bounds = Screen.PrimaryScreen.Bounds;
             panelMenu.Width = 50;
-            panelPodatci.Height = 0;
-            panelUcenik.Height = 75;
             labelDodajUcenika.BackColor = Color.SkyBlue;
-            panelDodajUcenika.Visible = true;
-            panelUpisaniUcenici.Visible = false;
+            panelOcjene.Visible = false;
+            buttonNazad.Location = buttonNext.Location;
 
         }
 
@@ -54,7 +52,7 @@ namespace WindowsFormsApp1
             {
                 panelMenu.Width = panelMenu.Width + 10;
                 panelDodajUcenika.Left = panelDodajUcenika.Left + 10;
-                panelUpisaniUcenici.Left = panelUpisaniUcenici.Left + 10;
+                panelOcjene.Left = panelOcjene.Left + 10;
                 if (panelMenu.Width >= 220)
                 {
                     timer1.Stop();
@@ -67,7 +65,7 @@ namespace WindowsFormsApp1
             {
                 panelMenu.Width = panelMenu.Width - 10;
                 panelDodajUcenika.Left = panelDodajUcenika.Left - 10;
-                panelUpisaniUcenici.Left = panelUpisaniUcenici.Left - 10;
+                panelOcjene.Left = panelOcjene.Left - 10;
                 if (panelMenu.Width <= 50)
                 {
                     timer1.Stop();
@@ -80,12 +78,9 @@ namespace WindowsFormsApp1
         private void labelDodajUcenika_Click(object sender, EventArgs e)
         {
             labelDodajUcenika.BackColor = Color.SkyBlue;
-            labelUpisiOcjene.BackColor = Color.Transparent;
             labelRangLista.BackColor = Color.Transparent;
-            labelUpisaniUcenici.BackColor = Color.Transparent;
-
+            panelOcjene.Visible = false;
             panelDodajUcenika.Visible = true;
-            panelUpisaniUcenici.Visible = false;
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -105,30 +100,7 @@ namespace WindowsFormsApp1
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            labelDodajUcenika.BackColor = Color.Transparent;
-            labelUpisaniUcenici.BackColor = Color.Transparent;
-            labelRangLista.BackColor = Color.Transparent;
-            labelUpisiOcjene.BackColor = Color.SkyBlue;
-
-            panelDodajUcenika.Visible = false;
-            panelUpisaniUcenici.Visible = false;
-
-        }
-
-        private void label7_Click_1(object sender, EventArgs e)
-        {
-            labelDodajUcenika.BackColor = Color.Transparent;
-            labelUpisiOcjene.BackColor = Color.Transparent;
-            labelRangLista.BackColor = Color.Transparent;
-            labelUpisaniUcenici.BackColor = Color.SkyBlue;
-
-            panelDodajUcenika.Visible = false;
-            panelUpisaniUcenici.Visible = true;
+            checkBoxNjemacki.Checked = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -169,52 +141,31 @@ namespace WindowsFormsApp1
             }
         }
 
-
-
-
-        private void labelPrikaziVise_Click(object sender, EventArgs e)
-        {
-            timer2.Start();
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            if (sakriveno2 == 1)
-            {
-                panelPodatci.Height = panelPodatci.Height + 10;
-                panelUcenik.Height = panelUcenik.Height + 5;
-
-                if (panelPodatci.Height >= 880)
-                {
-                    timer2.Stop();
-                    sakriveno2 = 0;
-                    this.Refresh();
-                }
-
-            }
-            else if (sakriveno2 == 0)
-            {
-                panelPodatci.Height = panelPodatci.Height - 10;
-                panelUcenik.Height = panelUcenik.Height - 5;
-
-                if (panelPodatci.Height == 0)
-                {
-                    timer2.Stop();
-                    sakriveno2 = 1;
-                    this.Refresh();
-                }
-            }
-        }
-
         private void labelRangLista_Click(object sender, EventArgs e)
         {
             labelDodajUcenika.BackColor = Color.Transparent;
-            labelUpisiOcjene.BackColor = Color.Transparent;
-            labelUpisaniUcenici.BackColor = Color.Transparent;
             labelRangLista.BackColor = Color.SkyBlue;
+            Form3 f = new Form3();
+            f.Show();
 
+
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
             panelDodajUcenika.Visible = false;
-            panelUpisaniUcenici.Visible = false;
+            panelOcjene.Visible = true;
+        }
+
+        private void buttonNazad_Click(object sender, EventArgs e)
+        {
+            panelOcjene.Visible = false;
+            panelDodajUcenika.Visible = true;
+        }
+
+        private void checkBoxNjemacki_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxEngleski.Checked = false;
         }
     }
 }
