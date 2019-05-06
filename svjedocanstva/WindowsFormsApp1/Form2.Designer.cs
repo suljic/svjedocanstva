@@ -51,8 +51,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.buttonX = new System.Windows.Forms.Button();
             this.panelDodajUcenika = new System.Windows.Forms.Panel();
-            this.labelWarning = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
             this.checkBoxNjemacki = new System.Windows.Forms.CheckBox();
             this.checkBoxEngleski = new System.Windows.Forms.CheckBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -62,11 +61,11 @@
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.buttonNext = new System.Windows.Forms.Button();
+            this.labelWarning = new System.Windows.Forms.Label();
+            this.buttonDodajUcenika = new System.Windows.Forms.Button();
             this.panelOcjene = new System.Windows.Forms.Panel();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -96,6 +95,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelUspjeh = new System.Windows.Forms.Label();
+            this.checkBoxGeneracijaDa = new System.Windows.Forms.CheckBox();
+            this.checkBoxGeneracijaNe = new System.Windows.Forms.CheckBox();
             this.panelMenu.SuspendLayout();
             this.panelDodajUcenika.SuspendLayout();
             this.panelOcjene.SuspendLayout();
@@ -334,33 +335,20 @@
             this.panelDodajUcenika.TabIndex = 10;
             this.panelDodajUcenika.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // labelWarning
+            // buttonNext
             // 
-            this.labelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelWarning.AutoSize = true;
-            this.labelWarning.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(899, 88);
-            this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(191, 15);
-            this.labelWarning.TabIndex = 29;
-            this.labelWarning.Text = "Sva polja moraju biti popunjena !";
-            this.labelWarning.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(901, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 35);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Dodaj Učenika";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
+            this.buttonNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNext.BackgroundImage")));
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.White;
+            this.buttonNext.Location = new System.Drawing.Point(715, 818);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(34, 23);
+            this.buttonNext.TabIndex = 30;
+            this.buttonNext.UseVisualStyleBackColor = false;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // checkBoxNjemacki
             // 
@@ -477,26 +465,40 @@
             this.checkedListBox1.Size = new System.Drawing.Size(146, 64);
             this.checkedListBox1.TabIndex = 19;
             // 
-            // buttonNext
+            // labelWarning
             // 
-            this.buttonNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
-            this.buttonNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNext.BackgroundImage")));
-            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNext.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext.ForeColor = System.Drawing.Color.White;
-            this.buttonNext.Location = new System.Drawing.Point(715, 818);
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(34, 23);
-            this.buttonNext.TabIndex = 30;
-            this.buttonNext.UseVisualStyleBackColor = false;
-            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            this.labelWarning.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelWarning.AutoSize = true;
+            this.labelWarning.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWarning.ForeColor = System.Drawing.Color.Red;
+            this.labelWarning.Location = new System.Drawing.Point(899, 88);
+            this.labelWarning.Name = "labelWarning";
+            this.labelWarning.Size = new System.Drawing.Size(191, 15);
+            this.labelWarning.TabIndex = 29;
+            this.labelWarning.Text = "Sva polja moraju biti popunjena !";
+            this.labelWarning.Visible = false;
+            // 
+            // buttonDodajUcenika
+            // 
+            this.buttonDodajUcenika.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDodajUcenika.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(131)))), ((int)(((byte)(213)))));
+            this.buttonDodajUcenika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajUcenika.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajUcenika.ForeColor = System.Drawing.Color.White;
+            this.buttonDodajUcenika.Location = new System.Drawing.Point(901, 50);
+            this.buttonDodajUcenika.Name = "buttonDodajUcenika";
+            this.buttonDodajUcenika.Size = new System.Drawing.Size(144, 35);
+            this.buttonDodajUcenika.TabIndex = 28;
+            this.buttonDodajUcenika.Text = "Dodaj Učenika";
+            this.buttonDodajUcenika.UseVisualStyleBackColor = false;
+            this.buttonDodajUcenika.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelOcjene
             // 
+            this.panelOcjene.Controls.Add(this.checkBoxGeneracijaNe);
+            this.panelOcjene.Controls.Add(this.checkBoxGeneracijaDa);
             this.panelOcjene.Controls.Add(this.textBox21);
             this.panelOcjene.Controls.Add(this.label26);
-            this.panelOcjene.Controls.Add(this.textBox20);
             this.panelOcjene.Controls.Add(this.label25);
             this.panelOcjene.Controls.Add(this.textBox19);
             this.panelOcjene.Controls.Add(this.label24);
@@ -547,13 +549,6 @@
             this.label26.Size = new System.Drawing.Size(137, 23);
             this.label26.TabIndex = 42;
             this.label26.Text = "Eksterna matura";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(341, 319);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 41;
             // 
             // label25
             // 
@@ -811,6 +806,28 @@
             this.labelUspjeh.TabIndex = 0;
             this.labelUspjeh.Text = "Uspjeh po razredima";
             // 
+            // checkBoxGeneracijaDa
+            // 
+            this.checkBoxGeneracijaDa.AutoSize = true;
+            this.checkBoxGeneracijaDa.Location = new System.Drawing.Point(341, 320);
+            this.checkBoxGeneracijaDa.Name = "checkBoxGeneracijaDa";
+            this.checkBoxGeneracijaDa.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxGeneracijaDa.TabIndex = 44;
+            this.checkBoxGeneracijaDa.Text = "Da";
+            this.checkBoxGeneracijaDa.UseVisualStyleBackColor = true;
+            this.checkBoxGeneracijaDa.CheckedChanged += new System.EventHandler(this.checkBoxGeneracijaDa_CheckedChanged);
+            // 
+            // checkBoxGeneracijaNe
+            // 
+            this.checkBoxGeneracijaNe.AutoSize = true;
+            this.checkBoxGeneracijaNe.Location = new System.Drawing.Point(401, 321);
+            this.checkBoxGeneracijaNe.Name = "checkBoxGeneracijaNe";
+            this.checkBoxGeneracijaNe.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxGeneracijaNe.TabIndex = 45;
+            this.checkBoxGeneracijaNe.Text = "Ne";
+            this.checkBoxGeneracijaNe.UseVisualStyleBackColor = true;
+            this.checkBoxGeneracijaNe.CheckedChanged += new System.EventHandler(this.checkBoxGeneracijaNe_CheckedChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -820,7 +837,7 @@
             this.Controls.Add(this.panelOcjene);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonDodajUcenika);
             this.Controls.Add(this.buttonX);
             this.Controls.Add(this.panelDodajUcenika);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -869,14 +886,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox checkBoxEngleski;
         private System.Windows.Forms.CheckBox checkBoxNjemacki;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDodajUcenika;
         private System.Windows.Forms.Label labelWarning;
         private System.Windows.Forms.Label labelRangLista;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Panel panelOcjene;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label24;
@@ -906,5 +922,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelUspjeh;
+        private System.Windows.Forms.CheckBox checkBoxGeneracijaNe;
+        private System.Windows.Forms.CheckBox checkBoxGeneracijaDa;
     }
 }

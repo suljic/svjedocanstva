@@ -53,6 +53,7 @@ namespace WindowsFormsApp1
                 panelMenu.Width = panelMenu.Width + 10;
                 panelDodajUcenika.Left = panelDodajUcenika.Left + 10;
                 panelOcjene.Left = panelOcjene.Left + 10;
+                //buttonDodajUcenika.Left = buttonDodajUcenika.Left + 10;
                 if (panelMenu.Width >= 220)
                 {
                     timer1.Stop();
@@ -66,6 +67,7 @@ namespace WindowsFormsApp1
                 panelMenu.Width = panelMenu.Width - 10;
                 panelDodajUcenika.Left = panelDodajUcenika.Left - 10;
                 panelOcjene.Left = panelOcjene.Left - 10;
+                //buttonDodajUcenika.Left = buttonDodajUcenika.Left - 10;
                 if (panelMenu.Width <= 50)
                 {
                     timer1.Stop();
@@ -101,6 +103,7 @@ namespace WindowsFormsApp1
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             checkBoxNjemacki.Checked = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -135,6 +138,14 @@ namespace WindowsFormsApp1
             {
                 labelWarning.Visible = true;
             }
+            else if (checkBoxEngleski.Checked && checkBoxNjemacki.Checked)
+            {
+                labelWarning.Visible = false;
+            }
+            else if (!checkBoxGeneracijaDa.Checked && !checkBoxGeneracijaNe.Checked)
+            {
+                labelWarning.Visible = true;
+            }
             else
             {
                 labelWarning.Visible = false;
@@ -145,9 +156,8 @@ namespace WindowsFormsApp1
         {
             labelDodajUcenika.BackColor = Color.Transparent;
             labelRangLista.BackColor = Color.SkyBlue;
-            Form3 f = new Form3();
-            f.Show();
-
+            panelDodajUcenika.Visible = false;
+            panelOcjene.Visible = false;
 
         }
 
@@ -166,6 +176,19 @@ namespace WindowsFormsApp1
         private void checkBoxNjemacki_CheckedChanged(object sender, EventArgs e)
         {
             checkBoxEngleski.Checked = false;
+            
+        }
+
+        private void checkBoxGeneracijaDa_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxGeneracijaNe.Checked = false;
+            
+        }
+
+        private void checkBoxGeneracijaNe_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxGeneracijaDa.Checked = false;
+            
         }
     }
 }
